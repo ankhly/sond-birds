@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<title>SondBird</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221116213839">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="header__container container">
+    <div class="header__body">
+      <div class="header__logo logo-header">
+        <div class="logo-header__image">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="logo-header__text">Song<span>bird</span></div>
+      </div>
+      <div class="header__menu menu">
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Об игре</a>
+            </li>
+            <!--<li class="menu__item">
+              <a href="victorina.html" class="menu__link">Викторина</a>
+            </li>-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="page">
+        <div class="page__container container">
+          <div class="page__body">
+            <div class="page__score">Score: <span>0</span></div>
+            <div class="page__list list-page">
+              <div class="list-page__body">
+                <div class="list-page__item">Разминка</div>
+                <div class="list-page__item">Воробьиные</div>
+                <div class="list-page__item">Лесные птицы</div>
+                <div class="list-page__item">Певчие птицы</div>
+                <div class="list-page__item">Хищные птицы</div>
+                <div class="list-page__item">Морские птицы</div>
+              </div>
+            </div>
+            <div class="page__body-task">
+              <div class="page__task task-page">
+                <div class="task-page__image">
+                  <picture><source srcset="img/plug.webp" type="image/webp"><img id="taskImg" src="img/plug.jpg" alt="plug" /></picture>
+                </div>
+                <div class="task-page__info info-task">
+                  <div class="info-task__title">*******</div>
+                  <div class="info-task__player player-info">
+                    <div class="player-info__controll controll-player">
+                      <button class="controll-player__play"></button>
+                    </div>
+                    <div class="player-info__bar bar-player">
+                      <progress
+                        class="bar-player__bar"
+                        max="100"
+                        value="0"
+                      ></progress>
+                      <div class="bar-player__time time">
+                        <div class="time__start"></div>
+                        <div class="time__end"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page__content content-page">
+                <div class="content-page__choose choose-content">
+                  <div class="choose-content__body">
+                    <button class="choose-content__item"></button>
+                    <button class="choose-content__item"></button>
+                    <button class="choose-content__item"></button>
+                    <button class="choose-content__item"></button>
+                    <button class="choose-content__item"></button>
+                    <button class="choose-content__item"></button>
+                  </div>
+                </div>
+                <div class="content-page__bird info-bird">
+                  <div class="info-bird__text-default">
+                    <p>Послушайте плеер.</p>
+                    <p>Выберите птицу из списка</p>
+                  </div>
+                  <div class="info-bird__cart cart-bird">
+                    <div class="cart-bird__content content-cart">
+                      <div class="content-cart__image">
+                        <picture><source srcset="img/plug.webp" type="image/webp"><img id="cartImg" src="img/plug.jpg" alt="bird" /></picture>
+                      </div>
+                      <div class="content-cart__info info-card">
+                        <div class="info-card__name">Горлица</div>
+                        <div class="info-card__english-name">
+                          Streptopelia turtur
+                        </div>
+                        <div class="info-card__player player-info">
+                          <div class="player-info__controll controll-player">
+                            <button class="controll-player__play-cart"></button>
+                          </div>
+                          <div class="player-info__bar bar-player">
+                            <progress
+                              class="bar-player__bar"
+                              max="100"
+                              value="0"
+                            ></progress>
+                            <div class="bar-player__time time">
+                              <div class="time__start"></div>
+                              <div class="time__end"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-bird__text">
+                      Горлица обитает в смешанных и широколиственных лесах, а
+                      также в городских парках и поселках. Птицы часто выбирают
+                      места жизни рядом с человеком и легко привыкают к людям.
+                      Благодаря мелодичному приятному пению горлиц часто
+                      разводят в домашних условиях.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="page__btn">Next Level</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__body">
+      <a href="https://rs.school/js/" class="footer__logo">
+        <img src="img/school.svg" alt="school" />
+      </a>
+      <div class="footer__git git">
+        <a href="https://github.com/ankhly" class="git__icon">
+          <img src="img/github.svg" alt="github" />
+        </a>
+        <div class="git__year">2022</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="js/app.min.js?_v=20221116213839"></script>
+  </body>
+</html>
